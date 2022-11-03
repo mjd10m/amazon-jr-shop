@@ -39,7 +39,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-  Category.create({
+  Tag.create({
     tag_name: req.body.tag_name
   })
   .then(dbCategoryData => res.json(dbCategoryData))

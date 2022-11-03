@@ -30,7 +30,7 @@ router.get('/:id', (req, res) => {
     ]
   })
   .then(dbCategoryData => {
-    !dbCategoryData ? res.status(404).json({message: 'No User found with this ID.'}) : res.json(dbCategoryData)
+    !dbCategoryData ? res.status(404).json({message: 'No Category found with this ID.'}) : res.json(dbCategoryData)
   })
   .catch(err => {
     res.status(500).json(err)
@@ -54,7 +54,7 @@ router.put('/:id', (req, res) => {
     }
   })
   .then(dbCategoryData => {
-    !dbCategoryData ? res.status(404).json({message: 'No User found with this ID.'}) : res.json(dbCategoryData)
+    !dbCategoryData ? res.status(404).json({message: 'No Category found with this ID.'}) : res.json(dbCategoryData)
   })
   .catch(err => {
     res.status(500).json(err)
@@ -68,7 +68,7 @@ router.delete('/:id', (req, res) => {
     }
   })
   .then(dbCategoryData => {
-    !dbCategoryData ? res.status(404).json({message: 'No User found with this ID.'}) : res.json(dbCategoryData)
+    !dbCategoryData ? res.status(404).json({message: 'No Category found with this ID.'}) : res.json(dbCategoryData)
   })
   .catch(err => {
     res.status(500).json(err)
